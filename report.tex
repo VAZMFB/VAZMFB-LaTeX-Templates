@@ -5,7 +5,7 @@
 % Faculty of Mechanical Engineering, University of Belgrade
 % Department of Aerospace Engineering, Flying structures
 % https://vazmfb.com
-% Belgrade, 2021
+% Belgrade, 2023
 % ----------------------------------------
 % ----------------------------------------
 
@@ -23,6 +23,8 @@
 \usepackage[unicode]{hyperref}
 \usepackage{graphicx}
 \usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[style=ieee]{biblatex}
 \usepackage{emptypage}
 \usepackage{textcomp}
 \usepackage{placeins}
@@ -48,6 +50,9 @@
 \usepackage{bm}
 \usepackage{tikz}
 \usepackage{scalerel}
+
+% Literature
+\addbibresource{bibliography.bib}
 
 % Folder for figures
 \graphicspath{{figures/}}
@@ -275,7 +280,7 @@
 	\vspace*{\fill}
 	\vfill
 
-	{\large \textsc{Belgrade, 2021}} % Place and year
+	{\large \textsc{Belgrade, 2023}} % Place and year
 \end{titlepage}
 
 % ----------------------------------------
@@ -427,6 +432,20 @@ Example of \textbf{matrix equations} % Bold text
        \gamma_{xy} \\
     \end{bmatrix} 
 \end{equation}
+
+Example of literature citation\cite{petrasinovic22}.
+ 
+% ----------------------------------------
+% LITERATURA
+% ----------------------------------------
+\pagestyle{listing}
+\hyphenpenalty=1
+\hbadness=1
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname} 
+\printbibliography
 
 % ----------------------------------------
 % APPENDIX

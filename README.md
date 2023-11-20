@@ -21,7 +21,7 @@ git clone https://github.com/VAZMFB/VAZMFB-LaTeX-Sabloni folder # change folder
 It is then possible to compile an example report (`report.tex`) or an example presentation (` presentation.tex`). Within the [Overleaf] (https://www.overleaf.com/) create a new project and upload all documents within the project documents, after which you need to select the desired `tex` document and press `Recompile` to compile document and obtain the final PDF document.
 
 ## License
-Copyright (C) 2021 Miloš Petrašinović <info@vazmfb.com>
+Copyright (C) 2023 Miloš Petrašinović <info@vazmfb.com>
  
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as 
