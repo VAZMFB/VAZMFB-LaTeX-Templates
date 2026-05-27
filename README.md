@@ -3,7 +3,7 @@
 Templates for LaTeX documents published within this repository are used at [Department of Aerospace Engineering (http://vaz.mas.bg.ac.rs/), [Faculty of Mechanical Engineering](https://www.mas.bg.ac.rs/), [University of Belgrade](http://www.bg.ac.rs/).
 
 <p align="center">
-  <img src="https://vazmfb.com/web/img/github/latex_templates.png" width="800">
+  <img src="https://milospetrasinovic.com/web/img/vazmfb-github/latex_templates.png" width="800">
 </p>
 
 For more information visit https://vazmfb.com
@@ -21,7 +21,7 @@ git clone https://github.com/VAZMFB/VAZMFB-LaTeX-Sabloni folder # change folder
 It is then possible to compile an example report (`report.tex`) or an example presentation (` presentation.tex`). Within the [Overleaf] (https://www.overleaf.com/) create a new project and upload all documents within the project documents, after which you need to select the desired `tex` document and press `Recompile` to compile document and obtain the final PDF document.
 
 ## License
-Copyright (C) 2023 Miloš Petrašinović <info@vazmfb.com>
+Copyright (C) 2023 Miloš Petrašinović <mpetrasinovic@mas.bg.ac.rs>
  
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as 
