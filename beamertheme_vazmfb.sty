@@ -7,8 +7,8 @@
 %  Mihailo G. Petrović <petrovicmiha@gmail.com>
 % Faculty of Mechanical Engineering, University of Belgrade
 % Department of Aerospace Engineering, Flying structures
-% https://vazmfb.com
-% Belgrade, 2021
+% http://vaz.mas.bg.ac.rs
+% Beograd, 2026
 % ----------------------------------------
 % Based on:
 % beamerthemeKUL.sty
@@ -46,7 +46,7 @@
 }{|}}}}
 
 
-% Colors
+% Boje
 \definecolor{tamno-plava}{cmyk}{1,0.79,0.32,0.17}
 \definecolor{svetlo-plava}{cmyk}{0.93,0.64,0.03,0}
 \definecolor{svetlo-siva}{HTML}{dddddd}
@@ -67,11 +67,11 @@
 \def\webpage#1{\gdef\@webpage{#1}}
 \def\webpageurl#1{\gdef\@webpageurl{#1}}
 
-% Figures
-\graphicspath{{}{figures/}}
+% Slike
+\graphicspath{{}{slike/}}
 
 % ----------------------------------------
-% Front page
+% Naslovna strana
 % ----------------------------------------
 \pgfdeclarehorizontalshading{haed-g}{100bp}
     {color(0bp)=(white); 
@@ -94,7 +94,6 @@
 \href{https://www.bg.ac.rs/}{\includegraphics[height=1.5cm]{ub-logo-t}}};
 \end{tikzpicture}%
 
-\vspace{5mm}
 \centering
 \href{\@webpageurl}{\texttt{\@webpage}} \\
 \usebeamerfont{title1}\textcolor{tamno-plava}{\href{\@webpageurl}{\inserttitle}} \\ \vspace{0.1cm}
@@ -102,7 +101,7 @@
 \usebeamerfont{Date}\normalfont{\insertdate} \\
 \begin{tikzpicture}[remember picture,overlay]
 \node[shading=foot-g, rectangle, anchor=south, minimum width=\paperwidth, minimum height=3cm] (foot-bg) at (current page.south){};
-\node[align=right, anchor=south east, inner xsep=6mm, inner ysep=10mm, text=tamno-plava, font=\small\itshape] (foot-authors) at (current page.south east){%
+\node[align=right, anchor=south east, inner xsep=6mm, inner ysep=6mm, text=tamno-plava, font=\small\itshape] (foot-authors) at (current page.south east){%
     \@authorsgroup};
 \node[align=left, anchor=south west, inner xsep=6mm, inner ysep=10mm, text=siva1, font=\small\itshape] (foot-inst) at (current page.south west){%
     \insertinstitute};
@@ -111,21 +110,21 @@
 \makeatother
     
 % ----------------------------------------
-% Footer of the presentation
+% Podnožje prezentacije
 % ----------------------------------------
 \makeatletter
 \setbeamertemplate{footline}{%
 \vspace{0.6cm}
 \begin{tikzpicture}[remember picture,overlay]
 \node[fill=svetlo-plava, anchor=south, minimum width=\paperwidth, minimum height=1mm, inner sep=0pt] (footer-line) at (current page.south){};
-\node[fill=svetlo-siva, anchor=south east, inner xsep=2mm, inner ysep=1mm, text=tamno-plava, font=\footnotesize] (footer-num) at (footer-line.north east) {\insertframenumber{}/\inserttotalframenumber{}};
+\node[fill=svetlo-siva, anchor=south east, inner xsep=2mm, inner ysep=1mm, text=tamno-plava, font=\footnotesize] (footer-num) at (footer-line.north east) {\insertpagenumber/\insertpresentationendpage};
 \node[anchor=south west, inner xsep=5mm, inner ysep=1mm, text=black, font=\footnotesize, minimum width=\paperwidth] (footer-link) at (footer-line.north west) {\href{\@webpageurl}{\texttt{\@webpage}}};
 \end{tikzpicture}%
 }
 \makeatother
 
 % ----------------------------------------
-% Header of the presentation
+% Zaglavlje prezentacije
 % ----------------------------------------
 \setbeamerfont{headline}{size=\Large}
 
@@ -157,10 +156,10 @@
 \makeatother
 
 % ----------------------------------------
-% Display adjustment
+% Podešavanje prikaza
 % ----------------------------------------
 
-% New box
+% Novi box
 \newtcolorbox{vazmfb_block}[1]{
     before=\par\smallskip\centering,
 	colback=svetlo-siva,
@@ -178,7 +177,7 @@
    #1
 }
 
-% Enumerations
+% Nabrajanja
 \setbeamercolor*{enumerate item}{fg=tamno-plava}
 \setbeamercolor*{enumerate subitem}{fg=tamno-plava}
 \setbeamercolor*{enumerate subsubitem}{fg=tamno-plava}
